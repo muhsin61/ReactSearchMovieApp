@@ -31,10 +31,11 @@ form input[type="submit"]{
   width: auto;
   display: flex;
   justify-content: center;
-  text-align: center;
-  margin: auto 0;
+  box-shadow: 17px 16px 47px -13px rgba(0,0,0,0.34);
+  padding: 10px;
 }
 img{
+  top: 15px;
   position: relative;
   width: 186px;
   height: 280px;
@@ -50,6 +51,22 @@ img{
   text-align: left;
   padding: 10px;
 }
+h5{
+  font-family: 'Source Sans Pro', sans-serif; 
+  font-size: 20px; 
+  margin: 0;
+}
+.text p:nth-child(3){
+  font-weight: bold;
+}
+.line{
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 90%;
+  background-color: black;
+  margin-bottom: 30px;
+}
 @media screen and (max-width: 15cm) {
   form input[type="text"]{
     width: 85%;
@@ -61,6 +78,11 @@ img{
   .card{
     margin: auto 0;
     display: block;
+    position: relative;
+    padding-left: 10%;
+  }
+  .text h5{
+    margin-top: 10px;
   }
   img{
     display: block;
